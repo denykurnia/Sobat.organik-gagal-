@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Sobat.organik</string>
+    <string name="user">user</string>
+    <string name="pesan">pesan</string>
+    <string name="home">home</string>
+    <string name="feed">feed</string>
+    <string name="shopping">shopping</string>
 </resources>
