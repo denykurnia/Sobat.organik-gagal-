@@ -61,7 +61,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="610dp"
         android:layout_weight="1">
 
         <LinearLayout
@@ -142,7 +142,7 @@
                         android:textColor="@color/putih" />
                 </LinearLayout>
             </LinearLayout>
-
+            <!--menu-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -289,12 +289,77 @@
                         android:textSize="12dp" />
                 </LinearLayout>
             </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/background_khusus"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--Title swipe-->
+                <LinearLayout
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/putih"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:text="Produk Terbaru"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <Button
+                        android:textAllCaps="false"
+                        android:textColor="@color/putih"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="View All"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--Card Produk-->
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <ImageView
+                                        android:cropToPadding="false"
+                                        android:adjustViewBounds="true"
+                                        android:src="@drawable/g5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"/>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        app:menu="@menu/item_bottom_navigasi"
-        android:background="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
         android:layout_width="match_parent"
-        android:layout_height="55dp"/>
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/item_bottom_navigasi"/>
+
 </LinearLayout>

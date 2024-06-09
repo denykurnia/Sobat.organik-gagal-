@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:title="@string/home"
-        android:id="@+id/ic_homee"
+    <item android:title="home"
+        android:id="@+id/home"
         android:icon="@drawable/ic_homee"/>
-    <item android:title="@string/feed"
-        android:id="@+id/ic_feed"
+    <item android:title="feed"
+        android:id="@+id/feed"
         android:icon="@drawable/ic_feed"/>
-    <item android:title="@string/shopping"
-        android:id="@+id/ic_shopping"
+    <item android:title="cart"
+        android:id="@+id/cart"
         android:icon="@drawable/ic_shopping"/>
-    <item android:title="@string/pesan"
-        android:id="@+id/ic_pesan"
+    <item android:title="pesan"
+        android:id="@+id/pesan"
         android:icon="@drawable/ic_pesan"/>
-    <item android:title="@string/user"
-        android:id="@+id/ic_user"
+    <item android:title="akun"
+        android:id="@+id/akun"
         android:icon="@drawable/ic_user"/>
 </menu>
