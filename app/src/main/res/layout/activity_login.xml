@@ -62,13 +62,15 @@
         android:layout_height="wrap_content"
         android:text="Create Account" />
 
-        <LinearLayout
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sobat Organik"
         android:textSize="24sp"
-        android:layout_marginBottom="24dp" />
-        </LinearLayout>
+        android:layout_marginBottom="24dp">
+
+    </TextView>
+
 
 </LinearLayout>
